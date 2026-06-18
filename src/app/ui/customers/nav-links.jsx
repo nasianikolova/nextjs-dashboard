@@ -3,7 +3,7 @@ import {
   UserGroupIcon,
   HomeIcon,
   DocumentDuplicateIcon,
-  UserIcon,
+  UserIcon
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -14,11 +14,11 @@ import clsx from 'clsx';
 const links = [
   { name: 'Home', href: '/ui/dashboard', icon: HomeIcon },
   {
-    name: 'Invoices',
-    href: '/ui/invoices',
+    name: 'Customers',
+    href: '/ui/customers',
     icon: DocumentDuplicateIcon,
   },
-  { name: 'Customers', href: '/ui/customers', icon: UserGroupIcon },
+  { name: 'Invoices', href: '/ui/invoices', icon: UserGroupIcon },
   { name: 'Settings', href: '/ui/settings', icon: UserIcon }
 ];
 
