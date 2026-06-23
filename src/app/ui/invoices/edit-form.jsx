@@ -4,6 +4,7 @@ import {
   CheckIcon,
   ClockIcon,
   CurrencyDollarIcon,
+  FlagIcon,
   UserCircleIcon,
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
@@ -90,6 +91,23 @@ export default function EditInvoiceForm({
                   className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600"
                 >
                   Pending <ClockIcon className="h-4 w-4" />
+                </label>
+              </div>
+              <div className="flex items-center">
+                <input
+                  id="late"
+                  name="status"
+                  type="radio"
+                  value="late"
+                  defaultChecked={invoice.status === 'late'}
+                  className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
+                  required
+                />
+                <label
+                  htmlFor="late"
+                  className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-red-400 px-3 py-1.5 text-xs font-medium text-white"
+                >
+                  Late <FlagIcon className="h-4 w-4" />
                 </label>
               </div>
               <div className="flex items-center">
