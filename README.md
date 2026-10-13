@@ -7,5 +7,3 @@ Coding: Full Stack Development with MERN.
 
 **[nextjs-dashboard-sepia-ten.vercel.app](https://nextjs-dashboard-sepia-ten.vercel.app)**
 
-Sign in with the seeded demo account: Email: user@nextmail.com
-Password: 123456
